@@ -1,0 +1,66 @@
+@font-face {
+    font-family: "Free Pixel";
+    src: url(../assets/FreePixel.ttf);
+}
+
+@font-face {
+    font-family: "Chicago";
+    src: url(../assets/Chicago.ttf);
+}
+
+body {
+    font-family: sans-serif;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+}
+
+.icon {
+    height: 64px;
+    width: 64px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    image-rendering: pixelated;
+}
+
+.icon p {
+    font-family: "Chicago";
+    font-size: 1em;
+    text-rendering: geometricPrecision;
+    width: 96px;
+    position: absolute;
+    margin-top: 64px;
+    margin-left: -16px;
+    color: black;
+    text-align: center;
+}
+
+.icon:active p span {
+    background-image: url(../assets/checker-50.gif);
+    color: black;
+}
+
+.icon p span {
+    padding: 1px;
+}
+
+.icon:active {
+    filter: brightness(0.8);
+}
+
+.folder {
+    background-image: url(../assets/folder-64.gif);
+}
+
+.folder.open {
+    background-image: url(../assets/folder-open-64.gif);
+}
+
+#about-me {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+}
